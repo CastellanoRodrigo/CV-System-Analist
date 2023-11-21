@@ -1,0 +1,226 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*border: 1px solid lightblue;*/
+}
+/*SPV= Selector+Propiedad+Valor*/
+/*TIPOS DE MEDIDAS:
+    %= tamaño relativo
+    px= tamaño fijo
+    vh= tamaño visible
+    vw= tamaño visible
+    */
+/* CUERPO */
+body{
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* CABECERA */
+header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 10%;
+    background: #2db2ff6e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+          
+}
+/* LOGO */
+.logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Comfortaa', sans-serif;
+}
+/* LISTA NAV */
+header nav ul li{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #ffffff;
+}
+/* LINKS NAV */
+header nav ul li a{
+    font-family: 'Comfortaa', sans-serif;
+    color: #ffffff;
+    margin: 5px;
+}
+
+header nav{
+    text-align: right;
+}
+header{
+    position: relative;
+}
+.analista{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+       
+}
+.analista .boxbanner{
+    text-align: center;
+    margin-top: 50px;
+    
+} 
+.analista h1{
+    color: #ffffff;
+    position: relative;
+    padding: 10px;
+}
+.analista h2{
+    color: #2DB3FF;
+    position: relative;
+    padding: 15px;
+}
+
+.analista .presentacion{
+    padding: 15px;
+    position: relative;
+}
+
+.presentacion p{
+    color: #ffffff;
+    padding: 15px;  
+    position: relative;
+}
+.presentacion{
+    margin-left: 50px;
+}
+main{
+    display: inline-block;
+}
+.bannerButton{
+    padding: 10px;
+    position: relative;
+}
+.bannerButton a{
+    color: #ffffff;
+    background-color: #2DB3FF;
+    border-radius: 10%;
+    padding: 5px 15px;
+}
+/* BANNER */
+.banner img{
+    width: 80%;
+}
+
+.boxbanner{
+    margin-top: 0;
+    max-width: 45%;
+}
+
+/* FOOTER */
+#footer{
+position:absolute;
+background-color: #2db2ff6e;
+text-align: center;
+bottom: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding-left: 50px;
+padding-right: 50px;
+margin-top: auto;
+align-items: center;
+/*height: auto;
+
+*/
+
+}
+
+.footer__logo img{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+.footer__links a{
+    color: #ffffff;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.footer__redes img{
+    width: 50px;
+    height: 50px;
+}
+
+/* ACERCA DE */
+#acercaDe{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+#acercaDe h2{
+    color: #ffffff;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 20px;
+
+}
+#acercaDe h3{
+    color: #2DB3FF;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 20px;
+}
+
+#acercaDe ul{
+    color: #ffffff;
+    margin: 20px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/* PORTAFOLIO */
+#proyectos{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+#proyectos h2{
+    color: #2DB3FF;
+    margin: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display:inline-block;
+}
+
+/* CONTACTO */
+.formulario{
+    color: #2DB3FF;
+    margin: 40px;
+    font-family: 'Comfortaa', sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.formulario div{
+    margin: 30px;
+}
