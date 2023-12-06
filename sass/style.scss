@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    /*border: 1px solid lightblue;*/
+    border: 1px solid lightblue; /**/
 }
 /*SPV= Selector+Propiedad+Valor*/
 /*TIPOS DE MEDIDAS:
@@ -20,7 +20,11 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-/* CABECERA */
+
+
+/* #########################################*/
+                /* HEADER */
+/* #########################################*/
 header{
     position: fixed;
     width: 100%;
@@ -30,14 +34,18 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index:100;
-          
 }
-/* LOGO */
 .logo{
     color: #ffffff;
     text-decoration: none;
     font-size: 50px;
     font-family: 'Comfortaa', sans-serif;
+}
+/* LOGO */
+.logo img{
+    margin-right: 30px;
+    border-radius: 100px;
+    border:8px solid #2DB3FF ;
 }
 /* LISTA NAV */
 header nav ul li{
@@ -51,6 +59,7 @@ header nav ul li a{
     font-family: 'Comfortaa', sans-serif;
     color: #ffffff;
     margin: 5px;
+    text-decoration: none;
 }
 
 header nav{
@@ -59,13 +68,20 @@ header nav{
 header{
     position: relative;
 }
+
+
+/* #########################################*/
+                /* BODY */
+/* #########################################*/
+
+
+
 .analista{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-       
+    width: 100%;    
 }
 .analista .boxbanner{
     text-align: center;
@@ -109,6 +125,8 @@ main{
     border-radius: 10%;
     padding: 5px 15px;
 }
+
+
 /* BANNER */
 .banner img{
     width: 80%;
@@ -119,7 +137,11 @@ main{
     max-width: 45%;
 }
 
-/* FOOTER */
+
+
+/* #########################################*/
+                /* FOOTER */
+/* #########################################*/
 #footer{
 position:absolute;
 background-color: #2db2ff6e;
@@ -132,20 +154,24 @@ padding-left: 50px;
 padding-right: 50px;
 margin-top: auto;
 align-items: center;
+text-decoration: none;
 /*height: auto;
 
 */
-
-}
-
 .footer__logo img{
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+    margin-left: 70px;
     background-color: transparent;
     border-radius: 100%;
+    border:8px solid #2DB3FF
 }
 
-.footer__links a{
+.footer__links ul{
+    list-style: none;
+    margin-right: 50px;
+}
+.footer__links ul a{
     color: #ffffff;
     font-family: 'Comfortaa', sans-serif;
 }
@@ -154,6 +180,8 @@ align-items: center;
     width: 50px;
     height: 50px;
 }
+}
+
 
 /* ACERCA DE */
 #acercaDe{
