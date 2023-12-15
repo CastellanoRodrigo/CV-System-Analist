@@ -1,167 +1,21 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: 1px solid lightblue; /**/
-}
-
-/*SPV= Selector+Propiedad+Valor*/
-/*TIPOS DE MEDIDAS:
-    %= tamaño relativo
-    px= tamaño fijo
-    vh= tamaño visible
-    vw= tamaño visible
-    */
-/* CUERPO */
-body {
-  background: #000000;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* #########################################*/
-/* HEADER */
-/* #########################################*/
-header {
-  position: fixed;
-  width: 100%;
-  padding: 20px 10%;
-  background: rgba(45, 178, 255, 0.431372549);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-.logo {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 50px;
-  font-family: "Comfortaa", sans-serif;
-}
-
-/* LOGO */
-.logo img {
-  margin-right: 30px;
-  border-radius: 100px;
-  border: 8px solid #2DB3FF;
-}
-
-/* LISTA NAV */
-header nav ul li {
-  display: inline-block;
-  font-size: 20px;
-  font-family: "Comfortaa", sans-serif;
-  color: #ffffff;
-}
-
-/* LINKS NAV */
-header nav ul li a {
-  font-family: "Comfortaa", sans-serif;
-  color: #ffffff;
-  margin: 5px;
-  text-decoration: none;
-}
-
-header nav {
-  text-align: right;
-}
-
-header {
-  position: relative;
-}
-
-/* #########################################*/
-/* BODY */
-/* #########################################*/
-.analista {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.analista .boxbanner {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.analista h1 {
-  color: #ffffff;
-  position: relative;
-  padding: 10px;
-}
-
-.analista h2 {
-  color: #2DB3FF;
-  position: relative;
-  padding: 15px;
-}
-
-.analista .presentacion {
-  padding: 15px;
-  position: relative;
-}
-
-.presentacion p {
-  color: #ffffff;
-  padding: 15px;
-  position: relative;
-}
-
-.presentacion {
-  margin-left: 50px;
-}
-
-main {
-  display: inline-block;
-}
-
-.bannerButton {
-  padding: 10px;
-  position: relative;
-}
-
-.bannerButton a {
-  color: #ffffff;
-  background-color: #2DB3FF;
-  border-radius: 10%;
-  padding: 5px 15px;
-}
-
-/* BANNER */
-.banner img {
-  width: 80%;
-}
-
-.boxbanner {
-  margin-top: 0;
-  max-width: 45%;
-}
-
 /* #########################################*/
 /* FOOTER */
 /* #########################################*/
 #footer {
-  position: absolute;
+  position: fixed;
+  margin-top: auto;
+  display: flex;
   background-color: rgba(45, 178, 255, 0.431372549);
   text-align: center;
   bottom: 0;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: auto;
+  margin-bottom: 0;
   align-items: center;
   text-decoration: none;
-  /*height: auto;
-
-  */
 }
 #footer .footer__logo img {
   width: 90px;
@@ -178,10 +32,126 @@ main {
 #footer .footer__links ul a {
   color: #ffffff;
   font-family: "Comfortaa", sans-serif;
+  text-decoration: none;
+}
+#footer .footer__links ul a:hover {
+  color: #2DB3FF;
 }
 #footer .footer__redes img {
   width: 50px;
   height: 50px;
+}
+#footer .footer__links ul a:hover {
+  color: #2DB3FF;
+}
+
+/* #########################################*/
+/* HEADER */
+/* #########################################*/
+header {
+  /*position: fixed;*/
+  width: 100%;
+  padding: 20px 10%;
+  background: rgba(45, 178, 255, 0.431372549);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+}
+header nav {
+  text-align: right;
+}
+header nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
+}
+header nav ul li a {
+  font-family: "Comfortaa", sans-serif;
+  color: #ffffff;
+  margin: 5px;
+  text-decoration: none;
+}
+header .navbar a:hover {
+  color: #2DB3FF;
+}
+
+/* LOGO */
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: "Comfortaa", sans-serif;
+  margin-right: 30px;
+  align-items: center;
+  display: flex;
+}
+.logo img {
+  border-radius: 100px;
+  border: 7px solid #2DB3FF;
+  margin: 20px;
+}
+.logo a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* #########################################*/
+/* BODY */
+/* #########################################*/
+.analista {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.analista .presentacion {
+  padding: 15px;
+  position: relative;
+  margin-left: 50px;
+}
+.analista .boxbanner {
+  text-align: center;
+  margin-top: 50px;
+  box-sizing: content-box;
+}
+.analista .boxbanner h1 {
+  color: #ffffff;
+  position: relative;
+  padding: 10px;
+}
+.analista .boxbanner h2 {
+  color: #2DB3FF;
+  position: relative;
+  padding: 15px;
+}
+.analista .boxbanner p {
+  color: #ffffff;
+  padding: 15px;
+  position: relative;
+}
+
+/* BANNER */
+.banner__boxbanner {
+  margin-top: 0;
+  max-width: 45%;
+  padding: 50px;
+}
+.banner__boxbanner img {
+  width: 80%;
+}
+
+.banner_boxbanner:active {
+  transition: 1.5s;
+  transform: rotateY(360deg);
+}
+
+main {
+  display: inline-block;
+  position: relative;
 }
 
 /* ACERCA DE */
@@ -216,6 +186,21 @@ main {
   font-family: "Comfortaa", sans-serif;
 }
 
+/* CONTACTO */
+.formulario {
+  color: #2DB3FF;
+  margin: 40px;
+  font-family: "Comfortaa", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.formulario div {
+  margin: 30px;
+}
+
 /* PORTAFOLIO */
 #proyectos {
   position: relative;
@@ -240,19 +225,31 @@ main {
   display: inline-block;
 }
 
-/* CONTACTO */
-.formulario {
-  color: #2DB3FF;
-  margin: 40px;
-  font-family: "Comfortaa", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /*border: 1px solid lightblue; */
 }
 
-.formulario div {
-  margin: 30px;
+/*SPV= Selector+Propiedad+Valor*/
+/*TIPOS DE MEDIDAS:
+    %= tamaño relativo
+    px= tamaño fijo
+    vh= tamaño visible
+    vw= tamaño visible
+    */
+/* CUERPO */
+body {
+  position: relative;
+  background: #000000;
+  display: block;
+  min-height: 100vh;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

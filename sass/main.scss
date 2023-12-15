@@ -1,0 +1,60 @@
+/* #########################################*/
+                /* BODY */
+/* #########################################*/
+
+.analista{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    .presentacion{
+        padding: 15px;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    .boxbanner{
+        text-align: center;
+        margin-top: 50px;
+        box-sizing: content-box;
+
+        h1{
+            color: #ffffff;
+            position: relative;
+            padding: 10px;
+        }
+
+        h2{
+            color: #2DB3FF;
+            position: relative;
+            padding: 15px;
+        }
+        p{
+            color: #ffffff;
+            padding: 15px;  
+            position: relative;
+        }
+    } 
+}
+/* BANNER */
+.banner__boxbanner{
+    margin-top: 0;
+    max-width: 45%;
+    padding: 50px;
+
+    img{
+    width: 80%;
+    }
+}
+
+.banner_boxbanner:active{
+    transition: 1.5s;
+    transform:rotateY(360deg);
+
+}
+main{
+    display: inline-block;
+    position: relative;
+}

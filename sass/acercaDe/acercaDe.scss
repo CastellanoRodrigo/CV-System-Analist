@@ -1,0 +1,30 @@
+/* ACERCA DE */
+#acercaDe{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+#acercaDe h2{
+    color: #ffffff;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 20px;
+
+}
+#acercaDe h3{
+    color: #2DB3FF;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 20px;
+}
+
+#acercaDe ul{
+    color: #ffffff;
+    margin: 20px;
+    font-family: 'Comfortaa', sans-serif;
+}
