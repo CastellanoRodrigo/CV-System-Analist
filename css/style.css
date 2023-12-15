@@ -4,38 +4,41 @@
 /* #########################################*/
 #footer {
   position: fixed;
-  margin-top: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px 0 0 0;
   display: flex;
   background-color: rgba(45, 178, 255, 0.431372549);
   text-align: center;
   bottom: 0;
   width: 100%;
-  justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 0;
+  justify-content: space-around;
   align-items: center;
   text-decoration: none;
+}
+#footer .footer__logo {
+  margin-left: 0px;
 }
 #footer .footer__logo img {
   width: 90px;
   height: 90px;
-  margin-left: 70px;
   background-color: transparent;
   border-radius: 100%;
   border: 8px solid #2DB3FF;
 }
 #footer .footer__links ul {
   list-style: none;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 #footer .footer__links ul a {
   color: #ffffff;
   font-family: "Comfortaa", sans-serif;
   text-decoration: none;
+  margin-top: auto;
+  transform: scale(1.1);
 }
-#footer .footer__links ul a:hover {
-  color: #2DB3FF;
+#footer .footer__redes {
+  margin-right: 30px;
 }
 #footer .footer__redes img {
   width: 50px;
@@ -51,7 +54,7 @@
 header {
   /*position: fixed;*/
   width: 100%;
-  padding: 20px 10%;
+  padding: 0px 3%;
   background: rgba(45, 178, 255, 0.431372549);
   display: flex;
   justify-content: space-between;
@@ -72,6 +75,7 @@ header nav ul li a {
   color: #ffffff;
   margin: 5px;
   text-decoration: none;
+  transform: scale(1.1);
 }
 header .navbar a:hover {
   color: #2DB3FF;
@@ -109,13 +113,14 @@ header .navbar a:hover {
   width: 100%;
 }
 .analista .presentacion {
-  padding: 15px;
+  padding: 0px 10px;
   position: relative;
-  margin-left: 50px;
+  margin-left: 0px;
+  width: 50%;
 }
 .analista .boxbanner {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   box-sizing: content-box;
 }
 .analista .boxbanner h1 {
@@ -225,6 +230,40 @@ main {
   display: inline-block;
 }
 
+@media (min-width: 1400px) {
+  section.analista {
+    margin-top: 55px;
+  }
+  header {
+    padding: 0px 3%;
+  }
+  .footer {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  section.analista {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+  section.analista .banner_boxbanner img {
+    width: 120%;
+    align-items: center;
+  }
+}
+/*
+@media (max-width:600px){
+
+}
+
+@media (min-width:600px){
+
+}
+*/
 * {
   margin: 0;
   padding: 0;
@@ -246,7 +285,7 @@ body {
   background: #000000;
   display: block;
   min-height: 100vh;
-  margin-bottom: 40px;
+  margin-bottom: 280px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
