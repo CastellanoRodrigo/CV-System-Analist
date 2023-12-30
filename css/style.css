@@ -75,7 +75,6 @@ header nav ul li a {
   color: #ffffff;
   margin: 5px;
   text-decoration: none;
-  transform: scale(1.1);
 }
 header .navbar a:hover {
   color: #2DB3FF;
@@ -302,7 +301,7 @@ ul {
 /* LARGE SIZE */
 @media (min-width: 700px) {
   body {
-    padding: 0 4em;
+    padding: 0em;
   }
   .contact-wrapper {
     display: grid;
@@ -341,12 +340,31 @@ ul {
   display: inline-block;
 }
 
+.modal-ss {
+  color: aliceblue;
+  margin: 30px;
+  text-align: center;
+}
+.modal-ss h4 {
+  margin: 30px;
+}
+.modal-ss h5 {
+  margin: 30px;
+  color: #2DB3FF;
+}
+.modal-ss p {
+  color: black;
+}
+
 @media (min-width: 1400px) {
   section.analista {
     margin-top: 55px;
   }
   header {
+    width: 100%;
     padding: 0px 3%;
+    display: flex;
+    justify-content: space-around;
   }
   .footer {
     display: inline-block;
@@ -358,7 +376,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    flex-direction: wrap;
+    width: 100vw;
     margin-top: 0px;
   }
   section.analista .banner_boxbanner img {
@@ -366,10 +385,25 @@ ul {
     align-items: center;
   }
 }
+@media (max-width: 600px) {
+  section.analista {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 0px;
+  }
+  section.analista .banner_boxbanner img {
+    width: 100vw;
+    align-items: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   text-decoration: none;
   /*border: 1px solid lightblue; */
 }
@@ -386,11 +420,12 @@ body {
   position: relative;
   background: #000000;
   display: block;
-  min-height: 100vh;
   margin-bottom: 280px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

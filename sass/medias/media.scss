@@ -4,7 +4,10 @@
         margin-top: 55px;
     }
     header{
+        width: 100%;
         padding: 0px 3%;
+        display:flex;
+        justify-content:space-around;
     }
     .footer{
         display: inline-block;
@@ -20,7 +23,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        flex-direction:wrap;
+        width: 100vw;
         margin-top: 0px;
         .banner_boxbanner{
             
@@ -33,7 +37,22 @@
 }
 
 @media (max-width:600px){
-
+    section.analista {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:column;
+        width: 100vw;
+        margin-top: 0px;
+        .banner_boxbanner{
+            
+            img{
+            width: 100vw;
+            align-items: center;
+            }
+        }
+        }
 }
 
 

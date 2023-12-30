@@ -7,13 +7,14 @@
 @import "servicios/servicios.scss";
 @import "medias/media.scss";
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     text-decoration: none;
     /*border: 1px solid lightblue; */
 }
+
 /*SPV= Selector+Propiedad+Valor*/
 /*TIPOS DE MEDIDAS:
     %= tamaño relativo
@@ -22,25 +23,14 @@
     vw= tamaño visible
     */
 /* CUERPO */
-body{
-    position:relative;
+body {
+    position: relative;
     background: #000000;
     display: block;
-    min-height: 100vh;
     margin-bottom: 280px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
